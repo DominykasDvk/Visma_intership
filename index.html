@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Pizzeria_menu_manager</title>
+</head>
+<body>
+    <div class="head">
+    <header>
+        <h1>Welcome to Luigi's pizza managing system!</h1> 
+    </header>
+        <h2>Add new requred pizza here!</h2>
+    </div>
+
+
+    <div class="formMenustyle">
+    <form id="newPizzaForm" name="PizzaForm">
+        <div>
+            <p for="name">Name:</p>
+            <input type="text" name="name" id="name" required maxlength="30">
+        </div>
+        <div>
+            <p for="price">Price:</p>
+            <input type="number" name="price" id="price" required min="0" max="99" step="0.01">
+        </div>
+        <!-- heat should be displayed with chili pepers next to text to js -->
+        <div>
+            <p for="heat">Heat:</p>
+            <input type="number" name="heat" id="heat" min="1" max="3">
+        </div>
+        <!-- need to be array min-length 2 should be coma separated text  -->
+        <div>
+            <p for="toppings">Toppings:</p>
+            <input type="text" name="toppings" id="listOfToppings" required>
+        </div>
+
+        <div class="dropdown">
+            <p>Photo:</p>
+            <button class="dropbtn">Chose you pizza</button>
+                    <div class="dropdown-content">
+                        <a href="#"><img src="Pizza images/salami_red.png" alt="salami_red" class="minifoto" id="P1"> Pizza_salami_red</a>
+                        <a href="#"><img src="Pizza images/pizza_brocolinii.png" alt="pizza_brocolinii" class="minifoto" id="P2"> Pizza_brocolinii</a>
+                        <a href="#"><img src="Pizza images/greenChampion.png" alt="greenChampion" class="minifoto" id="P3"> Pizza_greenChampion</a>
+                        <a href="#"><img src="Pizza images/fourSeasons.png" alt="fourSeasons" class="minifoto" id="P4"> Pizza_fourSeasons</a>
+                        <a href="#"><img src="Pizza images/delicious.png" alt="delicious" class="minifoto" id="P5"> Pizza_delicious</a>
+                        <a href="#"><img src="Pizza images/chicken_rebellion.png" alt="chicken_rebellion" class="minifoto" id="P6"> Pizza_chicken_rebellion</a>
+                        <a href="#"><img src="Pizza images/crisp pizza.png" alt="crisp pizza" class="minifoto" id="P7"> Pizza_crisp</a>
+                        <a href="#"><img src="Pizza images/cheese-pizza.png" alt="delicious" class="minifoto" id="P8"> Pizza_cheese</a>
+                        <a href="#"><img src="Pizza images/chaseintrees-pizza.png" alt="chaseintrees-pizza" class="minifoto" id="P9"> Pizza_cheese in trees</a>
+                        <a href="#"><img src="Pizza images/sahara-pizza.png" alt="sahara-pizza" class="minifoto" id="P10"> Pizza_sahara</a>
+                    </div>
+                </div>
+            <div class="pizzaAddcontainer">
+        <input type="submit" value="Add pizza" id="submit" class="pizzaAdd">
+        </div>
+    </form>
+
+    <h1>Pizza meniu for your stomach</h1>
+
+    <div class="tableMeniu">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>list of toppings</th>
+                    <th>photo</th>
+                    <th>heat</th>
+                </tr>
+            </thead>
+            <tbody id="pizzaList">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <script src="Js/script.js"></script>
+    
+</body>
+</html>
+

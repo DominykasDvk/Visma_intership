@@ -1,0 +1,124 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Italiana', serif;
+    font-weight: 700;
+    background-image: url("../Pizza images/background.png");
+    background-repeat: no-repeat;
+    background-size: 2048px 1080px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    text-align: center;   
+}
+
+.head{
+    background-color: black;
+    opacity: 0.9;
+    color: azure;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.minifoto {
+    width: 40px;
+}
+
+.pizzaAdd {
+    width: 35%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 30px;
+    color: brown;
+    background-color: #ced11e;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.pizzaAddcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.pizzaAdd:hover {
+  background-color: rgb(232, 248, 6);
+}
+
+input[type=text]{
+    width: 30%;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+input[type=number]{
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+.dropbtn {
+    background-color: #da8619;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: orange;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table, th, td {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid rgb(160, 158, 158);
+    border-top: 2px solid rgb(160, 158, 158);
+}
+
+.tableMeniu{
+    margin: 12px 20px;
+    padding: 12px 8px;
+}
+
+.formMenustyle{
+    background-color: rgba(255, 254, 254, 0.7);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
